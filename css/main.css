@@ -906,22 +906,47 @@ footer {
 	padding-left: 10rem;
 }	
 
-.project-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	/*align-items: center;*/
-	justify-content: space-around;
-}	
-
-.project-card article {
-	flex-basis: 67%;
-}
-
- .project-card img {
-	width: 40%;
-} 		
 	
+.wrapper_1 {
+  display: flex;
+  flex-direction: row;	
+	align-content: center;
+	align-items: center;
+  justify-content: center;
+
+}	
+.div-1 img {
+	padding-left: 0.1rem;
+	height: 16rem;
+	width: 43%;;	
+}	
+	
+.div-2 img {
+	padding-left: 23rem;
+	padding-top: -64rem;
+	height: 20rem;
+	width: 47%;;
+}	
+.wrapper_2 {
+  display: flex;
+  justify-content: space-around;
+		
+}	
+	
+	
+.div-3 img{
+	height: 16rem;
+	width: 148%;
+	padding-left: 0.1rem;
+	
+}
+	
+	
+.div-4 img {
+	height: 16rem;
+	padding-left: 9rem;
+	width: 64%;
+}			
 	
 footer {
 	display: flex;
