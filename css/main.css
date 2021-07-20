@@ -907,23 +907,23 @@ footer {
 }	
 
 	
-.wrapper_1 {
-  display: flex;
-  flex-direction: row;	
+.wrapper {
+	m
+	
+  display: flex;	
 	align-content: center;
 	align-items: center;
   justify-content: center;
 
 }	
 .div-1 img {
-	padding-left: 0.1rem;
+
 	height: 16rem;
 	width: 43%;;	
 }	
 	
 .div-2 img {
-	padding-left: 23rem;
-	padding-top: -64rem;
+
 	height: 20rem;
 	width: 47%;;
 }	
@@ -934,15 +934,15 @@ footer {
 }	
 	
 	
-.div-3 img{
+.div-1 img{
 	height: 16rem;
 	width: 148%;
-	padding-left: 0.1rem;
+	
 	
 }
 	
 	
-.div-4 img {
+.div-2 img {
 	height: 16rem;
 	padding-left: 9rem;
 	width: 64%;
@@ -1024,28 +1024,32 @@ footer {
   /*add display:flex and set justify-content to space-between*/
 	
   display: flex;
+	margin: 0 1rem;
   justify-content: space-around;
-  font-weight: 700;
-	margin-left: -5.8rem;
+
 }
 
 .div-1, .div-2 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+ text-align: center;
+	padding-bottom: 10px;
+border: 1px solid #ddd;
+	box-shadow: -5px 2px 15px 0 #ddd;
+  width: 48%;
   color: #fff;
-  line-height: 1.5em;
+
   font-size: 1.6em;
-                                          /* background-color: #f16059;*/
-  height: 300px;
 }
 	
-	
-.wrapper_1 {
+	h5 {
+		display: block;
+		font-size: 0.8rem;
+		margin-block-start: 1.6rem;
+		margin-block-end: 1.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+	}
+.wrapper {
   display: flex;
   flex-direction: row;	
 	align-content: center;
@@ -1054,36 +1058,20 @@ footer {
 
 }	
 .div-1 img {
-	padding-left: 13rem;
-	width: 61%;;	
+	height: auto;
+	width: 90%;	
 }	
 	
-.div-2 img {
-	padding-right: 5rem;
-	padding-bottom: 4rem;
-	height: 20rem;
-	width: 60%;;
-}	
-.wrapper_2 {
-  display: flex;
-  justify-content: space-around;
-		
 
-}
 	
-.div-3 img{
-	height: 16rem;
-	width: 100%;
-	padding-left: 10rem;
+.div-1 img{
+	height: auto;
+	width: 90%;	
 	
 }
 	
 	
-.div-4 img {
-	height: 16rem;
-	padding-left: 16rem;
-	width: 44%;
-}		
+	
 
 /* ==========================================================================
    Helper classes
