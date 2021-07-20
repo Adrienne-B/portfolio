@@ -1022,30 +1022,41 @@ footer {
 	
 .wrapper_1 {
   display: flex;
-flex-direction: row;	
-  justify-content: space-around;
+  flex-direction: row;	
+	align-content: center;
+	align-items: center;
+  justify-content: center;
 
 }	
 .div-1 img {
-	width: 47%;;	
+	padding-left: 13rem;
+	width: 61%;;	
 }	
 	
 .div-2 img {
-	width: 50%;;
+	padding-right: 5rem;
+	padding-bottom: 4rem;
+	height: 20rem;
+	width: 60%;;
 }	
 .wrapper_2 {
   display: flex;
   justify-content: space-around;
+		
 
 }
 	
 .div-3 img{
-	width: 85%;
+	height: 16rem;
+	width: 100%;
+	padding-left: 10rem;
 	
 }
 	
 	
 .div-4 img {
+	height: 16rem;
+	padding-left: 16rem;
 	width: 44%;
 }		
 
