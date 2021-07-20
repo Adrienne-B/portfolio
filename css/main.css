@@ -1,0 +1,1236 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* General Styles */
+ 
+html {
+  font-size: 16px;
+}
+ 
+body {
+  font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;	
+	/*prevents white space from the right side*/
+}
+
+ul, 
+ol {
+	
+  list-style-type: none;
+}
+
+a {
+ /* color: #e2e3ed;*/
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  color: black;
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.875em;
+}
+ 
+h3, 
+h4 {
+  font-weight: 500;
+  font-size: 1.125em;
+  margin: 20px 0;
+	/*This is for the contact title for the footer*/
+}
+
+h4 {
+	font-family: 'Syncopate', sans-serif;
+	color: white;
+}
+
+img {
+ width: 100%;
+}
+ 
+figure {
+ margin: 0;
+}
+
+address {
+ font-style: normal;
+}
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+
+header,
+footer {
+  align-items: center;	
+  background-color: hitew;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+header {
+  padding: 15px 0; /*makes the height of the header longer*/
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+		
+}
+
+header figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+.header-divider {
+  background: #3a3a3a; 
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+header nav {
+  font-size: 1.125em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-around;	
+  text-transform: uppercase;
+  width: 60%; /*Made the links have space.*/	
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;		
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
+footer {
+  flex-direction: column;	
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  margin: 50px 0;	
+  width: 55%;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  /*background-color: #e67e22;
+  border-radius: 50%;* took out the solid orange from the social media icons*/
+	
+  border: 1px solid #FF6500;
+  border-radius: 200px;
+  color: darkorange;	
+	
+  align-items: center;
+  display: flex;
+  justify-content: center;	
+  width: 40px;
+  height: 40px;	
+					/*margin-right: 2em;*/
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+header li:hover,
+header li:active {
+    background-color: #527158;
+}
+
+
+				/* -------------------- Mobile Styles - Homepage -------------------- */ 
+
+
+header {
+	/*background-image: url("img/profile.png");*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 45rem;
+	padding-left: 34px;
+}
+
+.hero-area {
+	background-repeat: no-repeat;
+	background-position: center;	
+	background-size: cover;
+	/*padding-top: 58px;* I had a white space b/w the nav and picture. so I had this, but now with the min-height it makes the picture show its entirty and closes the white gap*/
+
+  	display: flex;
+  	flex-flow: row wrap;
+	justify-content: center;
+	min-height: 1.2rem;
+}
+
+.content-wrapper {
+	display: flex;
+  	flex-flow: row wrap;
+	justify-content: center;
+}
+
+ h1 {
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	/*font-family: 'Raleway', sans-serif;*/
+	font-size: 3em;
+	text-align: center;
+	margin-left: 2rem;
+	margin-top: 9rem;
+}
+
+ h2 {
+	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Great Vibes', cursive;*/
+	/*font-family: 'Pinyon Script', cursive;*/
+	/*font-family: 'Sacramento', cursive;*/
+	margin-left: 2rem;
+	margin-top: -5rem;	
+}
+
+p {
+	color: black;
+	padding: 0 34px 0 34px;
+	text-align: justify;
+	font-family: 'Jura', sans-serif;
+}
+
+.hero-area_wrapper {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.hero-area_wrapper h1 {
+	color: white;
+	font-size: 1.5em;
+	margin-top: -24rem;
+}
+
+.hero-area_wrapper h3 {
+	color: black;
+	margin-top: -21rem;
+}
+
+.hero-area_wrapper #name {
+	color: mediumpurple;
+	font-size: 2.4em;
+	margin-left: 2rem;
+	margin-top: -27rem;
+}
+
+.social .social-icons {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.social-icons {
+	color: white;
+	margin-top: -14rem;
+}
+
+.social, .social-icons i {
+	color: white;
+	font-size: 1.5em;
+	padding-bottom: 3rem;
+}
+
+/*-------END OF HOMEPAGE IMAGE------*/
+
+
+.biography {
+	display: flex;
+	flex-flow: row wrap;	
+}
+
+.biography_wrapper {
+	margin-top: 1rem;
+}
+
+.biography_wrapper h2 {
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-style:italic;
+	margin-left: 1rem;
+	padding-bottom: 1rem;
+	padding-top: 10rem;
+	text-align: center;
+}
+
+.description {
+	margin-top: -1rem;
+}
+
+.biography_wrapper img {
+	justify-content: center;
+	padding-bottom: 2rem;
+	padding-left: 8rem;
+	padding-top: 2rem;
+	width: 45%;
+}
+
+/*-------END OF BIOGRAPHY W/ IMAGE------*/
+
+.motto_1 .overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: 100px;
+	position: absolute;
+	/*top: 43;
+	left: 0;*/
+	height: 220px;
+	width: 100%;
+}
+
+/*-------END OF QUOTE SECTION DIVIDER------*/
+
+
+.cover_letter h2 {
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-style:italic;
+	margin-left: 1rem;
+	margin-top: -12rem;
+	/*font-family: 'Great Vibes', cursive;*/
+	/*font-family: 'Pinyon Script', cursive;*/
+	/*font-family: 'Sacramento', cursive;*/
+		/*font-family: 'Koho', sans-serif;*/
+	text-align: center;
+}
+
+
+/*-------END OF COVER LETTER------*/
+
+
+.parallax {
+	background: url('img/earrings.png') no-repeat; /*temporary picture*/
+	background-attachment: fixed;
+	background-size: cover;
+	height: 220px;
+}
+
+.motto_1 p {
+	font-size: 0.89em;
+	font-family: 'Syncopate', sans-serif;
+	color: white;
+	/*this will be in white color*/
+	margin-top: 54px;
+	text-align: center;
+}
+
+.motto_1 h4 {
+	font-size: 0.74em;
+	font-family: 'Syncopate', sans-serif;
+	color: white;
+	text-align: right;
+	padding-right: 45px;
+}
+
+.motto_1 .overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: 100px;
+	position: absolute;
+	/*top: 43;
+	left: 0;*/
+	height: 222px;
+	width: 100%;
+}
+
+/*-------END OF OVERLAY------*/
+
+
+.resume {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.resume-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.resume-container h2 {
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-style:italic;
+	margin-top: 3rem;
+	padding-left: 3rem;
+	text-align:center;
+}
+
+.resume-container h4 {
+	color: dimgrey;
+	/*font-family: 'Koho', sans-serif;*/
+	font-style:italic;
+	margin-left: 5rem;
+	margin-top: -1rem;
+	padding-left: 1rem;
+	padding-bottom: -4rem;
+	text-align: center;
+}
+
+.resume-container article  i {
+	color: mediumpurple;
+	font-size: 2em;
+	padding-left: 12rem;
+	padding-top: 2rem;
+	width: 45px;
+}
+
+.resume-container article ul li {
+	padding-left: 6rem;	
+}
+
+.resume-container li {
+	color: dimgray;
+	font-family: 'Nova Mono', monospace;
+	font-size: 1.2em;
+	padding-left: 10rem;
+	padding-right: 3rem;
+	text-align: center;
+}
+
+.Graphics h4 {
+	color: dimgrey;
+	/*font-family: 'Koho', sans-serif;*/
+	font-style:italic;
+	margin-left: 6.5rem;
+	margin-top: 6.1rem;
+	padding-left: 1rem;
+	padding-bottom: -4rem;
+	text-align: center;
+}
+
+.Graphics ul li {
+	color: dimgrey;
+	/*font-family: 'Koho', sans-serif;*/
+	font-family: 'Nova Mono', monospace;
+	font-size: 1.1em;
+	line-height: 4rem;
+	margin-left: 6.5rem;
+	margin-top: -1rem;
+	padding-bottom: -4rem;
+	text-align: center;
+}
+
+
+/*-------END OF RESUME------*/
+
+
+.motto_2 .overlay_2 {
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: 100px;
+	position: absolute;
+	/*top: 43;
+	left: 0;*/
+	height: 275px;
+	width: 100%;
+}
+
+.parallax_2 {
+	background: url("img/profile_2.png") no-repeat; /*temporary picture*/
+	background-attachment: fixed;
+	background-size: cover;
+	height: 17.2rem;
+	margin-top: 6rem; 
+	padding-bottom: -3rem;
+}
+
+.motto_2 p {
+	color: white;
+	font-size: 0.89em;
+	font-family: 'Syncopate', sans-serif;
+	/*this will be in white color*/
+	margin-top: 54px;
+	text-align: center;
+}
+
+.motto_2 h4 {
+	color: white;
+	font-size: 0.74em;
+	font-family: 'Syncopate', sans-serif;
+	padding-right: 45px;
+	text-align: right;
+}
+
+
+/*-------END OF OVERLAY_2------*/
+
+
+.portfolio h2 {
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-style:italic;
+	margin-top: 3rem;
+	padding-left: 10rem;
+}
+
+.project-card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.project-card img {
+	margin-left: 1.7rem;
+	width: 88%;
+}
+
+footer {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.copyright {
+	color: black;
+	font-size: 3rem;
+}
+
+
+@media only screen and (min-width:768px) {
+
+.hero-area {
+	/*background-image: url("img/profile.png");*/
+	background-size: cover;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+}
+	
+.hero-area_wrapper, .social, .social-icons {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.hero-area_wrapper h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+}
+	
+.hero-area_wrapper #name {
+	color: white;
+	font-size: 1.7em;
+	margin-left: 5px;
+	padding-top: 2rem;
+}
+	
+.social, .social-icons i {
+	color: white;
+	font-size: 1.2em;
+	width: 43%;
+}
+
+	
+/*-------END OF HOMEPAGE IMAGE------*/
+
+
+.biography {
+	display: flex;
+	flex-flow: row wrap;	
+	justify-content: center;
+}
+
+.biography_wrapper h2 {
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-style:italic;
+	margin-left: 0.2rem;
+	padding-bottom: 1rem;
+	padding-top: 10rem;
+	text-align: center;
+}
+
+.biography_wrapper {
+	margin-left: 4rem;	
+	margin-right: 4rem;	
+}
+	
+.biography_wrapper img {
+	padding-top: 7rem;
+}
+	
+.description {
+	margin-top: -1rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	padding-bottom: 5rem;
+}
+
+.description p {
+	font-size: 1.4rem
+	/*margin-left: 4rem;	
+	margin-right: 4rem;*/
+}	
+
+.biography_wrapper img {
+	justify-content: center;
+	padding-left: 13rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	width: 45%;
+}
+
+/*-------END OF BIOGRAPHY W/ IMAGE------*/
+
+.motto_1 .overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: 100px;
+	font-size: 1.4em;
+	position: absolute;
+	/*top: 43;
+	left: 0;*/
+	height: 220px;
+	width: 100%;
+}
+
+/*-------END OF QUOTE SECTION DIVIDER------*/
+
+
+.cover_letter h2 {
+	color: black;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-style:italic;
+	margin-left: 1rem;
+	margin-top: -9rem;
+	/*font-family: 'Great Vibes', cursive;*/
+	/*font-family: 'Pinyon Script', cursive;*/
+	/*font-family: 'Sacramento', cursive;*/
+		/*font-family: 'Koho', sans-serif;*/
+}
+
+.cover_letter p {
+	font-size: 1.4rem;
+	padding-left: 6rem;
+	padding-right: 4em;
+}
+
+/*-------END OF COVER LETTER------*/
+
+
+.parallax {
+	background: url('img/earrings.png') no-repeat; /*temporary picture*/
+	background-attachment: fixed;
+	background-size: cover;
+	height: 220px;
+}
+
+.motto_1 p {
+	font-size: 0.89em;
+	font-family: 'Syncopate', sans-serif;
+	color: white;
+	/*this will be in white color*/
+	margin-top: 54px;
+	text-align: center;
+}
+	
+.motto_1 h4 {
+	font-size: 0.74em;
+	font-family: 'Syncopate', sans-serif;
+	color: white;
+	padding-right: 45px;
+	text-align: right;
+}
+
+.motto_1 .overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: 100px;
+	position: absolute;
+	/*top: 43;
+	left: 0;*/
+	height: 222px;
+	width: 100%;
+}
+
+/*-------END OF OVERLAY------*/
+
+
+.resume {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+	
+.resume-container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+	
+.resume h2 {
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-style:italic;
+	margin-top: 3rem;
+	padding-left: 18rem;
+}
+	
+.resume-container h4 {
+	color: dimgrey;
+	/*font-family: 'Koho', sans-serif;*/
+	font-style:italic;
+	padding-left: 1.8rem;
+	padding-bottom: -4rem;
+	margin-top: -1rem;
+	text-align: center;
+	word-wrap: break-word;
+	width: 13rem;
+}
+
+.resume-container article ul i {
+	color: mediumpurple;
+	font-size: 2em;
+	padding-left: 12rem;
+	padding-top: 2rem;
+	width: 45px;
+}
+
+.resume-container li {
+	color: dimgray;
+	font-family: 'Nova Mono', monospace;
+	font-size: 1.2em;
+	padding-left: 1rem;
+	padding-right: 3rem;
+	text-align: center;
+}
+
+.resume-container .Graphics h4 {
+	color: dimgrey;
+	/*font-family: 'Koho', sans-serif;*/
+	font-style:italic;
+	padding-left: 1rem;
+	padding-bottom: -4rem;
+	margin-top: 6.1rem;
+	text-align: center;
+}
+	
+.resume-container .Graphics ul li {
+	color: dimgrey;
+	/*font-family: 'Koho', sans-serif;*/
+	font-family: 'Nova Mono', monospace;
+	font-size: 1.0em;
+	line-height: 4rem;
+	margin-top: -1rem;
+	padding-bottom: -4rem;
+	text-align: center;
+}
+
+
+	
+
+/*-------END OF RESUME------*/
+
+
+.motto_2 .overlay_2 {
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: 100px;
+	position: absolute;
+	/*top: 43;
+	left: 0;*/
+	height: 275px;
+	width: 100%;	
+}
+	
+.parallax_2 {
+	background: url("img/profile_2.png") no-repeat; /*temporary picture*/
+	background-attachment: fixed;
+	background-size: cover;
+	height: 17.2rem;
+	margin-top: 6rem; 
+	padding-bottom: -3rem;
+}
+
+.motto_2 p {
+	color: white;
+	font-size: 1.2em;;
+	font-family: 'Syncopate', sans-serif;
+	/*this will be in white color*/
+
+	margin-top: 42px;
+	padding-left: -1rem;
+	text-align: center;
+	word-wrap: break-word;
+	width: 35em;
+}
+	
+.motto_2 h4 {
+	color: white;
+	font-size: 1em;
+	font-family: 'Syncopate', sans-serif;
+	padding-right: 45px;
+	text-align: right;
+}
+
+
+/*-------END OF OVERLAY_2------*/
+
+
+.portfolio {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}	
+	
+.portfolio h2 {
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-style:italic;
+	margin-top: 3rem;
+	padding-left: 10rem;
+}	
+
+.project-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/*align-items: center;*/
+	justify-content: space-around;
+}	
+
+.project-card article {
+	flex-basis: 67%;
+}
+
+ .project-card img {
+	width: 40%;
+} 		
+	
+	
+footer {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.copyright {
+	color: black;
+	font-size: 1.9rem;
+}
+}
+
+
+@media only screen and (min-width:1200px) {
+
+	
+.social, .social-icons i {
+	color: white;
+	font-size: 1.2em;
+	margin-top: 12rem;
+	padding-right: 55px;
+	width: 43%;
+}	
+	
+.biography article {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+	
+.biography h2{
+	width: 85%;
+}	
+	
+.biography article figure,
+.biography article div {
+	width: 25%;
+}
+	
+.biography_wrapper h2 {
+	padding-left: 7rem;
+	text-align: center;	
+}	 
+	
+.biography_wrapper img {
+	width: 95%;	
+	margin-top: 10rem;
+	margin-left: 4rem;
+}
+	
+.description {
+	margin-right: 23rem;
+	margin-top: 7rem;
+}
+	
+.description p {
+	/*margin-top: 66px;*/
+	word-wrap: break-word;
+	width: 156%;	
+}
+
+	
+/**End of Biography**/	
+	
+	
+.cover_letter p {
+	margin-left: 18rem;
+	word-wrap: break-word;
+	width: 46%;
+}	
+	
+/**End of Cover letter**/	
+	
+.wrapper {
+  /*add display:flex and set justify-content to space-between*/
+	
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+	margin-left: -5.8rem;
+}
+
+.div-1, .div-2 {
+  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 1.6em;
+                                          /* background-color: #f16059;*/
+  height: 300px;
+}
+	
+.div-1 img {
+	width: 29rem;	
+}	
+	
+.div-2 img {
+	width: 29rem;
+	max-height: 30rem;
+	padding-bottom: 2rem;
+}	
+.wrapper_2 {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+}
+	
+.div-3, .div-4 {
+	align-items: center;
+	color: black;
+	display: flex;
+	font-size: 14px;
+	line-height: 19px;
+	justify-item: space-between;
+	padding-left: 40px;
+	text-align: justify;
+	
+}
+
+.div-3 img {
+	width: 15rem;	
+}	
+	
+.div-4 img {
+	width: 15rem;
+	max-height: 24rem;
+	padding-top: -7rem;
+}		
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/*@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+/*}*/
+
+
+
+
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+}
