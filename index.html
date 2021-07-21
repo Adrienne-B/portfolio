@@ -21,23 +21,25 @@
   <!-- Place favicon.ico in the root directory -->
 	
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./hamburger/css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 	
 	
 	<!-- FontAwesome CDN version 5.5 -->
 	
-	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<!--Abril Fatface-->
 	
 	
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
 	<!--syncopatee-->
-	
-	
 	
 	
 	
@@ -104,25 +106,48 @@
 
 <body>
 	<header>
-		<div class="content-wrapper">
-			<figure>
-				<a href="#"><img src="file:///C|/Users/Guest1/Desktop/site folder 1 - Copy/img" alt="logo"/></a>
-			</figure>
-			
-			<div class="header-divider"></div>
-			
 			<nav>
 				<ul>
 					<li><a href="about/index.html.html" target="_blank">HOME</a></li>
 					
-					<li><a href="about/index.html.html" target="_blank">ABOUT</a></li>
+					<li><a href="#about-section" target="_blank">ABOUT</a></li>
+					
+					<li><a href="#resume-section" target="_blank">RESUME</a></li>
+					
+					<li><a href="#portfolio-section">PORTFOLIO</a></li>
 					
 					<li><a href="contact/index.html" target="_blank">CONTACT</a></li>
 				
 				</ul>
 			</nav>
-		</div>
+		
+	
+		
+			<div id="menu-bar">
+				<div id="menu" onclick="onClickMenu()">
+					<div id="bar1" class="bar"></div>
+					<div id="bar2" class="bar"></div>
+					<div id="bar3" class="bar"></div>
+				</div>
+
+				<ul class="nav" id="nav">
+					<li><a href="#">Home</a></li>
+					
+					<li><a href="./about/index.html" target="_blank">About</a></li>
+					
+					<li><a href="./employment/index.html" target="_blank">Resume</a></li>
+					
+					<li><a href="./faq/index.html" target="_blank">Portfolio</a></li>
+					
+					<li><a href="./contact/index.html" target="_blank">Contact</a></li>
+				</ul>
+			</div>
+			
+			<div class="menu-bg" id="menu-bg"></div>
+			
+		</div>	
 	</header>
+		
 	
 	
 	
@@ -143,19 +168,16 @@
 		
 			<div class="social">
 				<div class="social-icons">
-						<p><a href="https://www.squarespace.com/yoursite" target="_blank"></a><i class="fab fa-squarespace"></i>
-						</p>
+						<a href="https://worldofarts95.squarespace.com/config/" target="_blank"><i class="fab fa-squarespace"></i></a>
 						
-						<p><a href="https://www.instagram.com/yoursite" target="_blank"></a><i class="fab fa-instagram"></i>
-						</p>
 					
-						<p><a href="https://www.github.com/yoursite" target="_blank"></a><i class="fab fa-github"></i>
-						</p>
+						<a href="https://www.instagram.com/worldofarts_95" target="_blank"><i class="fab fa-instagram"></i></a>
+						
 					
-						<p><a href="https://www.linkedin.com/in/adrienne-burney" target="_blank"></a><i class="fab fa-linkedin"></i>
-							
-							
-						</p>
+						<a href="https://github.com/Adrienne-B" target="_blank"><i class="fab fa-github"></i></a>
+						
+					
+						<a href="https://www.linkedin.com/in/adrienne-burney" target="_blank"><i class="fab fa-linkedin"></i></a>
 					</div>
 				</div>
 			</section>
@@ -166,7 +188,7 @@
 	
 	
 	
-	<section class="biography">
+	<section class="biography" id="about-section">
 	  <div class="biography_wrapper">
 		
 			
@@ -178,10 +200,10 @@
 						
 				
 					  <div class="description">
-						  <h2>Biography</h2>
+						  <h2>About</h2>
 							  <p>Adrienne Burney is always looking for the next big opportunity to translate life experiences into art.  Since, four years old she has always had a gift at drawing.  She decided at 16 years old that she wanted to enhance her skills and pursue the Movie industry; specifically big film companies, such as Disney and PIXAR.  Adrienne achieved her Associates Degree for Entertainment Technology in December 2017 and a Bachelor's degree for Arts in May 2020. But, in 2021 she decided to transition herself into IT Tech. In 2021 she received a certificate for Software Engineering/ Front-end Web Development.</p>
 
-							  <p>When asked, what keeps her going and why she chose a male dominate the field, as well as being a minority, she said, "My motto in life is, if you think big, then big things will happen. The only person that can stop you from accomplishing greatness is you. I want to take chances, break every stereotype, have a bright future, and smile knowing that I did this by myself. Because having determination, a great support system, with a strong faith as my foundation will be the ultimate reason why I made it.</p>
+							 <!-- <p>When asked, what keeps her going and why she chose a male dominate the field, as well as being a minority, she said, "My motto in life is, if you think big, then big things will happen. The only person that can stop you from accomplishing greatness is you. I want to take chances, break every stereotype, have a bright future, and smile knowing that I did this by myself. Because having determination, a great support system, with a strong faith as my foundation will be the ultimate reason why I made it.</p>-->
 
 					  </div>
 			  </article>
@@ -242,7 +264,7 @@
 	<!------END OF COVER LETTER----->
 	
 
-				  <section class="resume">
+				  <section class="resume" id="resume-section">
 		<div class="resume-container">
 	
 			<!-- I want to put logos on all software that I know-->
@@ -279,14 +301,14 @@
 				  
 				  
 				  
-			<div class="Skills">	
+			<!--<div class="Skills">	
 				<article>		
 					<h4>Additional Skill</h4>
 					<ul>
 					<li>Spanish (pre-intermediate in reading and writing)</li>
 						</ul>
 				  </article>
-						  </div>
+						  </div>-->
 		
 	</section>
 	
@@ -318,9 +340,8 @@
 	
 	
 	
-	<section class="portfolio">
-			<div class="project-container">
-				<div class="project-card">
+	<section class="portfolio" id="portfolio-section">
+			
 					<div class="overlay_3">
 						
 				<h2>Portfolio</h2>
@@ -329,12 +350,12 @@
  <section class="wrapper">
         <div class="div-1">
 			<h5>Project one</h5>
-				<img src="./covers/jubilee_austin.png" width="93" alt="jubilee"/> 
+				<a href="https://adrienne-b.github.io/julibee_austin/"><img src="./covers/jubilee_austin.png" width="93" alt="jubilee"/></a>
 			 </div>
 		
         <div class="div-1">
 			<h5>Project Two</h5>
-				 <img src="./covers/rogue_pickings.png" width="93" alt="rogue_pickings"/> 
+				<a href="https://adrienne-b.github.io/rogue_pickings/"> <img src="./covers/rogue_pickings.png" width="93" alt="rogue_pickings"/></a> 
 			</div>
 	</section>	
 						
@@ -342,12 +363,26 @@
 	<section class="wrapper">
         <div class="div-1">
 			<h5>Project three</h5>
-				<img src="./covers/unplugged-retreat-website.png" width="93" alt="unplugged_retreat"/>
+				<a href="https://adrienne-b.github.io/unplugged-retreat/"><img src="./covers/unplugged-retreat-website.png" width="93" alt="unplugged_retreat"/></a>
+			
+			
+			
 		</div>
 			
+		
+		
 		<div class="div-1">
+			<div id="festive">
 			<h5>Project four</h5>
-				<img src="./covers/festive_cuisines.png" width="93" alt=""/>
+				<a href="https://adrienne-b.github.io/festive_cuisines/"><img src="./covers/festive_cuisines.png" width="93" alt=""/></a>
+			
+			<div class="image__overlay">
+				<div class="image__title"> Festive Cuisines</div>
+						<div p="image__description_4">
+							<a class="hover-text" href="https://adrienne-b.github.io/festive_cuisines/"  target="_blank">A restaurant that caters a diveristy of eating habits by having influential meals from around the world.</a></div>
+		</div>
+		</div>
+			</div>
 		</div>
 		</section>
 </main>
@@ -367,9 +402,10 @@
 	
 	
  <!-- Add your site or application content here -->
-  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="../js/plugins.js"></script>
-  <script src="../js/main.js"></script>
+  <script src="./js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="./js/plugins.js"></script>
+  <script src="./js/main.js"></script>
+   <script src= "./hamburger/js/javascript.js">						
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
