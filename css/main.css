@@ -1379,17 +1379,17 @@ border: 1px solid #ddd;
 		color: white;
 	}
 	
+	 
 .div-1 img {
 	height: auto;
 	width: 95%;	
 }	
 	
 
-	
 .div-1 img{
 	height: auto;
 	width: 90%;	
-	min-height: 380px;
+	min-height: 80px; /**380*/
 }
 	
 	.copyright {
