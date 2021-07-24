@@ -22,6 +22,7 @@ body {
 	display: block;
 	height: 4px;
 	margin-top: 0.4rem;
+	margin-left: 1.3rem;
 	padding-left: 1.3rem;
 	transition: 0.3s ease;
 	width: 100%;
@@ -52,16 +53,17 @@ body {
 .nav {
 	background-color: rgba(0, 0, 0, 0.6);
 	display: none;
-	padding: 0 11.2rem;;
+	padding: 0 11.2rem;
 	margin: 0 20px;
 	transition: 0.3s ease;
 }
 
 .menu-bg, #menu-bar {
-	padding-left: 1.8rem;
+	padding-right: 4rem;
 	left: 0;
 	position: absolute;
 	top: 0;
+/*this is the overlay for the hamburger nav*/
 	
 }
 .menu-bg {
