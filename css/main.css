@@ -192,7 +192,7 @@ header nav {
   text-transform: uppercase;
   width: 100%; /*Made the links have space.*/	
 }
-
+/*
 header nav ul {
   display: flex;
   background: black;
@@ -200,7 +200,7 @@ header nav ul {
  margin-top: -80px;
   padding: 30px;
   width: 100%;		
-}
+}*/
 
 header nav ul li {
   font-size: 1.125em;
@@ -315,12 +315,17 @@ nav li{
 
 		
 header {
-	background-image: url("img/profile.png");
+	background-image:url("../img/web_developer_2.png");
+	min-height: 65rem;
+	object-position: 29% -20%;
+	
+	/*background-image: url("img/profile.png");*/
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 45rem;
+	/*min-height: 45rem;*/
 	padding-left: 34px;
 }
+
 
 .hero-area {
 	background-repeat: no-repeat;
@@ -482,7 +487,8 @@ p {
 
 
 .parallax {
-	background: url('img/earrings.png') no-repeat; /*temporary picture*/
+	background: url("../img/3.jpg") no-repeat;
+	/*background: url('img/earrings.png') no-repeat; /*temporary picture*/
 	background-attachment: fixed;
 	background-size: cover;
 	height: 220px;
@@ -517,6 +523,38 @@ p {
 
 
 /*-------END OF OVERLAY------*/
+
+
+.btn {
+	background: black;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	height: 3rem;
+	margin-left: 10rem;
+	margin-top: 3rem;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 160px;
+		
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+}
+	
+.btn:hover, .btn:focus, .btn:active {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	-webkit-transform: sale(1.1);
+	transform: scale(1.1);
+}	
+
+
 
 
 .resume {
@@ -597,6 +635,36 @@ p {
 /*-------END OF RESUME------*/
 
 
+.work_experience h3  {
+	font-family: 'Syncopate', sans-serif;
+	margin-left: 1.0rem;
+	padding-top: 4rem;
+	text-align: center;
+}
+
+#medicaid h5 {
+	margin-left: 3rem;
+	font-family: 'Cormorant Upright', serif;
+	font-size: 1.2rem;
+}
+
+#medicaid h6 {
+	 margin-left: 3rem;
+}
+
+.work_experience li {
+	font-family: 'Jura', sans-serif;
+	line-height: 1.7rem;
+	list-style-type: circle;
+	z-index: 45;
+	
+	font-family: 'Merriweather', serif;
+	/*font-family: 'Gruppo', cursive;*/
+}
+
+
+
+
 .motto_2 .overlay_2 {
 	background-color: rgba(0, 0, 0, 0.5);
 	background-size: 100px;
@@ -608,7 +676,7 @@ p {
 }
 
 .parallax_2 {
-	background: url("img/profile_2.png") no-repeat; /*temporary picture*/
+	background: url("../img/1.png") no-repeat; /*temporary picture*/
 	background-attachment: fixed;
 	background-size: cover;
 	height: 17.2rem;
@@ -634,7 +702,7 @@ p {
 }
 
 
-/*-------END OF OVERLAY_2------*/
+/*-------END OF WORK EXPERIENCE------*/
 
 
 .portfolio h2 {
@@ -665,26 +733,26 @@ p {
 	font-style:italic;
 	margin-top: 3rem;
 	padding-bottom: 2rem;
-	padding-left: 1rem;
+	padding-left: 4rem;
 	padding-right: 12rem;
 	text-align:center;
 }
 
 .contact-container {
-	margin-left: 11rem;
+	margin-left: 6rem;
 	margin-top: 5rem;
 }
 
 .contact-container article  i {
 	color: black;
 	font-size: 3em;
-	padding-left: 6rem;
+	padding-left: 7rem;
 	padding-top: 2rem;
 	width: 55px;
 }
 
 .contact-container h4 {
-	padding-left: 3.5rem;
+	padding-left: 5rem;
 }
 
 .contact-container a {
@@ -905,7 +973,8 @@ footer {
 
 
 .parallax {
-	background: url('img/earrings.png') no-repeat; /*temporary picture*/
+	background: url("../img/3.jpg") no-repeat;
+	/*background: url('img/earrings.png') no-repeat; /*temporary picture*/
 	background-attachment: fixed;
 	background-size: cover;
 	height: 220px;
@@ -940,6 +1009,38 @@ footer {
 
 	
 /*-------END OF OVERLAY------*/
+	
+	
+	
+	
+	
+.btn {
+	background: black;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	height: 3rem;
+	margin-left: 1rem;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 160px;
+		
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+}
+	
+.btn:hover, .btn:focus, .btn:active {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	-webkit-transform: sale(1.1);
+	transform: scale(1.1);
+}	
 
 
 .resume {
@@ -1037,7 +1138,8 @@ footer {
 }
 	
 .parallax_2 {
-	background: url("img/profile_2.png") no-repeat; /*temporary picture*/
+	background: url("../img/1.png") no-repeat;
+	/*background: url("img/profile_2.png") no-repeat; /*temporary picture*/
 	background-attachment: fixed;
 	background-size: cover;
 	height: 17.2rem;
@@ -1187,9 +1289,12 @@ h5 {
 }
 	
 .Graphics_email h4 {
-	padding-left: 6rem;
+	font-size: 1.0rem;
+	padding-left: 8rem;
 	margin-top: 4rem;
 	margin-bottom: -2rem;
+	word-wrap: break-word;
+	width: 35%;
 }
 
 .Graphics_email h4 {
@@ -1209,7 +1314,7 @@ h5 {
 }
 	
 .Graphics_email i {
-	padding-right: -3rem;
+	padding-right: -1rem;
 	padding-bottom: -2rem;
 }	
 
@@ -1254,6 +1359,17 @@ header nav {
 	margin: 0;
 	padding: 0;
 }*/
+	
+	
+	
+header nav ul {
+  display: flex;
+  background: black;
+  justify-content: center;
+ margin-top: -25rem;
+  padding: 30px;
+  width: 100%;		
+}
 
 header nav ul li {
 	/* font-family: 'Cormorant SC', serif; */	
@@ -1307,29 +1423,30 @@ header.active {
 	color: white;
 	font-size: 1.5em;
 	margin-top: -24rem;
-	margin-left: 3rem;
+	margin-left: -10rem;
 }
 
  #name {
 	color: mediumpurple;
 	 font-family: 'Abril Fatface', cursive;
 	font-size: 2.4em;
-	margin-left: -5.6rem;
-	margin-top: -22rem;
+	margin-left: 7.6rem;
+	margin-top: -2rem;
 	
 }
 
 .hero-area_wrapper h3 {
 	color: white;
 	font-size: 1.3rem;
-	margin-top: -19rem;
-	margin-left: -19rem;
+	margin-top: -2.3rem;
+	margin-left: 7.6rem;
 }
 
 .social .social-icons {
 	display: flex;
-	flex-direction: row;
-	flex-flow: row wrap;
+	flex-direction: column;
+	flex-flow: column wrap;
+	justify-content: flex-end;
 }
 
 .social-icons {
@@ -1341,10 +1458,16 @@ header.active {
 .social, .social-icons i {
 	color: white;
 	font-size: 1.4em;
-	margin-right: 1rem;
+	margin-right: 0.1rem;
 	padding-bottom: 3rem;
-	padding-left: 2.4rem;
+	padding-left: 1.2rem;
 	padding-right: 1rem;
+	
+	
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
 }
 
 
@@ -1370,6 +1493,12 @@ header.active {
 	margin-top: -3rem;
     padding-right: 4rem;
 	width: 48%;
+	
+	
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
 }	
 	
 .biography article {
@@ -1416,7 +1545,8 @@ header.active {
 	
 
 .parallax {
-	background: url('img/earrings.png') no-repeat; /*temporary picture*/
+	background: url("../img/3.jpg") no-repeat;
+	/*background: url('img/earrings.png') no-repeat; /*temporary picture*/
 	background-attachment: fixed;
 	background-size: cover;
 	height: 220px;
@@ -1462,6 +1592,36 @@ header.active {
 /**End of Cover letter**/	
 	
 	
+.btn {
+	background: black;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	height: 3rem;
+	margin-left: 5rem;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 160px;
+		
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+}
+	
+.btn:hover, .btn:focus, .btn:active {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	-webkit-transform: sale(1.1);
+	transform: scale(1.1);
+}
+	
+	
+	
 .resume h2 {
 	margin-left: 27rem;	
 }	
@@ -1492,6 +1652,83 @@ header.active {
 	
 
 /**End of Resume**/	
+
+	
+.work_experience h3  {
+	font-family: 'Syncopate', sans-serif;
+	font-size: 1.3rem;
+	margin-left: 1.0rem;
+	padding-top: 4rem;
+	text-align: center;
+	
+	word-wrap: break-word;
+	width: 1204%;
+}
+
+#medicaid h5 {
+	margin-left: 3rem;
+	font-family: 'Cormorant Upright', serif;
+	font-size: 1.2rem;
+}
+
+#medicaid h6 {
+	 margin-left: 3rem;
+}
+
+	#medicaid  {
+		word-wrap: break-word;
+		word-wrap: 174%;
+	}	
+
+.work_experience ul  li {
+	font-family: 'Jura', sans-serif;
+	line-height: 1.7rem;
+	list-style-type: circle;
+	z-index: 45;
+	
+	font-family: 'Merriweather', serif;
+	/*font-family: 'Gruppo', cursive;*/
+	
+}
+
+
+
+
+.motto_2 .overlay_2 {
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: 100px;
+	position: absolute;
+	/*top: 43;
+	left: 0;*/
+	height: 275px;
+	width: 100%;
+}
+
+.parallax_2 {
+	background: url("../img/1.png") no-repeat; /*temporary picture*/
+	background-attachment: fixed;
+	background-size: cover;
+	height: 17.2rem;
+	margin-top: 6rem; 
+	padding-bottom: -3rem;
+}
+
+.motto_2 p {
+	color: white;
+	font-size: 0.89em;
+	font-family: 'Syncopate', sans-serif;
+	/*this will be in white color*/
+	margin-top: 54px;
+	text-align: center;
+}
+
+.motto_2 h4 {
+	color: white;
+	font-size: 0.74em;
+	font-family: 'Syncopate', sans-serif;
+	padding-right: 45px;
+	text-align: right;
+}	
 	
 	
 .motto_2 .overlay_2 {
@@ -1505,10 +1742,12 @@ header.active {
 }
 
 .parallax_2 {
-	background: url("img/profile_2.png") no-repeat; /*temporary picture*/
+	background: url("../img/1.png") no-repeat;
+	max-height: 32rem;
+	/*background: url("img/profile_2.png") no-repeat; /*temporary picture*/
 	background-attachment: fixed;
 	background-size: cover;
-	height: 17.2rem;
+	/*height: 17.2rem;*/
 	margin-top: 6rem; 
 	padding-bottom: -3rem;
 }
@@ -1655,6 +1894,13 @@ header.active {
 	font-size: 3em;
 	margin-right: -6rem;
 	width: 55px;
+	
+	
+	
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
 }
 
 .contact-container h4 {
@@ -1703,6 +1949,12 @@ header.active {
 .Graphics_email i {
 	padding-right: -3rem;
 	padding-bottom: -2rem;
+	
+	
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
 }	
 
 

@@ -77,7 +77,7 @@ body {
 }
 
 #menu-bar {
-	z-index: 2;
+	z-index: 999;
 }
 
 .change-bg {
