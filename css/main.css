@@ -578,7 +578,7 @@ h1 {
 }
 
 .parallax_2 {
-	background: url("../img/1.png") no-repeat; /*temporary picture*/
+	background: url("../img/1.png") no-repeat; 
 	background-attachment: fixed;
 	background-size: cover;
 	height: 17.2rem;
@@ -973,7 +973,6 @@ footer {
 	
 .parallax_2 {
 	background: url("../img/1.png") no-repeat;
-	/*background: url("img/profile_2.png") no-repeat; /*temporary picture*/
 	background-attachment: fixed;
 	background-size: cover;
 	height: 17.2rem;
@@ -1741,17 +1740,15 @@ h1 {
 
 /*End of Contact section*/	
 		
-	
-	
-	
-	
-	
-	
+
 .copyright {
 	font-size: 1.7rem;
 }	
 	
 	
+	
+	
+@media only screen and (min-width:1200px){	
 
 		
 	
