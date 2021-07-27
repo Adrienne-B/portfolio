@@ -217,8 +217,8 @@ nav {
 	z-index: 100; /* had to use this so that the links were in front as the user scrolls down*/
 }
 
-social, .social-icons i:hover,
-social, .social-icons i:active {
+.social, .social-icons i:hover,
+.social, .social-icons i:active {
     transform:scale(1.9);	
 }
 
@@ -291,6 +291,7 @@ header li:active {
 nav li{
 		display: none;
 	/* put nav link that is for desktop as none so that the regular nav wont show in mobile. Hamburger should only appear*/
+	
 }
 
 #menu-bar {
@@ -411,16 +412,16 @@ h1 {
 }
 
 .social-icons {
-	color: white;
-	margin-top: -20rem;
+	/*color: white;*/
+	margin-top: -10rem;
+	padding-left: 3.9rem;
 }
 
-.social, .social-icons i {
-	color: white;
-	font-size: 1.4em;
-	margin-right: 1rem;
-	padding-bottom: 3rem;
-	padding-left: 2.4rem;
+.social .social-icons i {
+	color: lawngreen;
+	font-size: 1.2em;
+	padding-bottom: -3rem;
+	padding-left: 2rem;
 	padding-right: 1rem;
 }
 
@@ -788,14 +789,15 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: -14rem;
+	margin-top: -24rem;
+	margin-left: 7rem;
 }	
 	
  .social-icons i {
 	color: white;
-	font-size: 1.6em;
+	font-size: 2rem;
     margin-left: 1rem;
-	width: 89%;
+	width: 92%;
 }
 
 	
@@ -1280,11 +1282,11 @@ h1 {
 	/*flex-flow: column wrap;*/
 	justify-content: flex-end;
 	margin-right: -19rem;
+	margin-top: -34rem;
 }
 
 .social-icons {
 	color: white;
-	margin-top: -28rem;
 }
 
 .social, .social-icons i {
@@ -1315,14 +1317,14 @@ h1 {
 }	
 
 .social {
-	margin-left: 5rem;
+	margin-left: 2rem;
 }
 	
 .social-icons i {
 	color: color;
 	font-size: 1.2em;
 	margin-left: 4rem;
-	margin-top: -3rem;
+	margin-top: 23rem;
     padding-right: 4rem;
 	width: 48%;
 	
