@@ -972,7 +972,7 @@ footer {
 }
 	
 .parallax_2 {
-	background: url("../img/1.png") no-repeat;
+	background: url("../css/img/1.png") no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	height: 17.2rem;
@@ -1475,7 +1475,7 @@ h1 {
 }
 
 .parallax_2 {
-	background: url("../css/img/1.png") no-repeat; /*temporary picture*/
+	background: url("../css/img/1.png") no-repeat; 
 	background-attachment: fixed;
 	background-size: cover;
 	height: 17.2rem;
@@ -1747,8 +1747,8 @@ h1 {
 	
 	
 	
-	
-@media only screen and (min-width:1200px){	
+/*	
+@media only screen and (min-width:1200px){	*/
 
 		
 	
